@@ -16,8 +16,3 @@ class Cat:
 
     def get_status(self):
         return self.status
-
-    def save(self):
-        with open('cats', 'a') as x:
-            x.write(f'{self.get_name(), self.get_gender(), self.get_age(), self.get_status()}'+'\n')
-
